@@ -1,0 +1,13 @@
+//Variaveis do tipo de fonte
+$greatVibes: "Great Vibes", serif;
+$inriaSans: "Inria Sans", serif;
+
+//variaveis de tamanho da fonte
+$fontH1: clamp(1.5rem, 2.5vw, 3rem);
+$fontH2: clamp(1.5rem, 2.5vw, 2.5rem);
+$fontH3: clamp(1.5rem, 2.5vw, 2rem);
+
+//variaveis de breakpoint
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1024px;
