@@ -1,7 +1,16 @@
 @use '@styles/patterns/mixins/mixins.scss' as mixins;
+@use '@styles/patterns/colors.scss' as color;
 
 .sectionUl{
     @include mixins.flex($align: center, $justify: space-evenly, $gap:5vw);
 
     padding: 1rem;
+}
+
+.cursorPointer{
+    cursor: pointer;
+    
+    &:hover{
+        color: color.$galeria;
+    }
 }

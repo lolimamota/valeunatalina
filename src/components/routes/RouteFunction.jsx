@@ -22,13 +22,13 @@ function routeFunction() {
   return (
     <section className={S.sectionNav}>
       <ul className={S.sectionUl}>
-        <li onClick={() => toSection('Home')}>
+        <li className={S.cursorPointer} onClick={() => toSection('Home')}>
           Início
         </li>
-        <li onClick={() => toSection('Curiosity')}>
+        <li className={S.cursorPointer} onClick={() => toSection('Curiosity')}>
           Curiosidades
         </li>
-        <li onClick={() => toSection('Gallery')}>
+        <li className={S.cursorPointer} onClick={() => toSection('Gallery')}>
           Galeria
         </li>
       </ul>
