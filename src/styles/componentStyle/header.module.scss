@@ -1,10 +1,27 @@
 @use '@styles/patterns/colors.scss' as color;
+@use '@styles/patterns/mixins/flex.module.scss' as mixins;
+@use '@styles/patterns/variables.scss' as variable;
 
 .headerStyle{
+    @include mixins.flex($justify: space-around, $gap: 1rem);
     background-color: color.$rectangle-color ;
-    display: flex;
+    background-image: url('@assets/flocos.png');
+    background-size: contain;
+    background-clip: border-box;
+    background-position: center;
     justify-content: space-between;
-    align-items: center;
     padding: 1rem;
     width: 100%;
+    color: color.$text-color;
+    font-family: variable.$greatVibes;
+}
+
+.sectionLogo{
+    @include mixins.flex($justify: space-evenly, $gap: 1rem);
+    border: solid white;
+    width: 50%;
+
+    img{
+        width: 10vw;
+    }
 }
