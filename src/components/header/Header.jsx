@@ -1,5 +1,6 @@
 import React from 'react';
 import RouteFunction from '@components/routes/RouteFunction.jsx';
+import '@styles/global.scss';
 
 //IMPORT DO ESTILO
 
@@ -10,7 +11,7 @@ import Arvore from '@assets/arvoreLogo.png';
 
 function Header() {
   return (
-    <header>
+    <header className={S.headerStyle}>
       <section>
         <img src={Arvore} alt="Arvore de natal verde com presemtes embaixo e bolinhas vermelhas e amarelas com uma estrela na ponta" />
         
