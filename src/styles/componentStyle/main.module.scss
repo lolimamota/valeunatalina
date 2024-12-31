@@ -1,0 +1,27 @@
+@use '@styles/patterns/mixins/mixins.scss' as mixins;
+@use '@styles/patterns/colors.scss' as color;
+@use '@styles/patterns/variables.scss' as variable;
+
+
+.homeStyle{
+    height: 85vh;
+    background-image: url('@assets/capa.png');
+    background-position: center;
+    background-size: 101%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    @include mixins.queryMobile{
+        height: 25vh;
+    }
+    @include mixins.queryTablet{
+        height: 60vh;
+    }
+}
+
+.curiosityStyle{
+    border: solid orangered;
+}
+
+.galleryStyle{
+    border: solid green;
+}
