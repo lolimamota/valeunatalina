@@ -1,5 +1,5 @@
 @use '@styles/patterns/colors.scss' as color;
-@use '@styles/patterns/mixins/flex.module.scss' as mixins;
+@use '@styles/patterns/mixins/mixins.scss' as mixins;
 @use '@styles/patterns/variables.scss' as variable;
 
 .headerStyle {
@@ -15,6 +15,14 @@
     font-family: variable.$greatVibes;
     font-size: variable.$fontH1;
     font-weight: 400;
+
+    @include mixins.queryMobile{
+        @include mixins.flex($direction: column)
+    }
+
+    @include mixins.queryTablet{
+        @include mixins.flex($direction: row, $justify: space-between)
+    }
 }
 
 .sectionLogo {
