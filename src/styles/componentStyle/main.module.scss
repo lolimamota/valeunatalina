@@ -20,6 +20,23 @@
 
 .curiosityStyle{
     border: solid orangered;
+    background-color: color.$rectangle-color;
+    background-image: url('@assets/flocos.png');
+    background-position: center;
+    background-size: contain;
+    color: color.$text-color;
+    font-family: variable.$inriaSans;
+    padding: 1rem;
+
+    @include mixins.flex($align: center, $justify: space-around);
+
+    p{
+        width: 60%;
+    }
+
+    img{
+        width: 10vw;
+    }
 }
 
 .galleryStyle{
