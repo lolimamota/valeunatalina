@@ -14,12 +14,11 @@
         height: 25vh;
     }
     @include mixins.queryTablet{
-        height: 60vh;
+        height: 45vh;
     }
 }
 
 .curiosityStyle{
-    border: solid orangered;
     background-color: color.$rectangle-color;
     background-image: url('@assets/flocos.png');
     background-position: center;
