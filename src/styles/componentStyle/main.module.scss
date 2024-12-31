@@ -26,6 +26,7 @@
     background-size: contain;
     color: color.$text-color;
     font-family: variable.$inriaSans;
+    font-size: variable.$fontH3;
     padding: 1rem;
 
     @include mixins.flex($align: center, $justify: space-around);
@@ -36,6 +37,27 @@
 
     img{
         width: 10vw;
+    }
+
+    @include mixins.queryMobile{
+        @include mixins.flex($direction: column, $align: center, $gap: 1rem);
+        p{
+            width: 80%;
+            text-align: center;
+        }
+        img{
+            width: 30vw;
+        }
+    }
+
+    @include mixins.queryTablet{
+        p{
+            width: 50%;
+            text-align: center;
+        }
+        img{
+            width: 20vw;
+        }
     }
 }
 
