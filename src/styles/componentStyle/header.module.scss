@@ -2,7 +2,7 @@
 @use '@styles/patterns/mixins/flex.module.scss' as mixins;
 @use '@styles/patterns/variables.scss' as variable;
 
-.headerStyle{
+.headerStyle {
     @include mixins.flex($justify: space-around, $gap: 1rem);
     background-color: color.$rectangle-color ;
     background-image: url('@assets/flocos.png');
@@ -10,18 +10,24 @@
     background-clip: border-box;
     background-position: center;
     justify-content: space-between;
-    padding: 1rem;
-    width: 100%;
+    padding: .2rem;
     color: color.$text-color;
     font-family: variable.$greatVibes;
+    font-size: variable.$fontH1;
+    font-weight: 400;
 }
 
-.sectionLogo{
-    @include mixins.flex($justify: space-evenly, $gap: 1rem);
-    border: solid white;
-    width: 50%;
+.sectionLogo {
+    @include mixins.flex($justify: space-around);
 
-    img{
-        width: 10vw;
+    h1 {
+        color: color.$text-color;
+        font-family: variable.$greatVibes;
+        font-size: variable.$fontH1;
+        font-weight: 400;
+    }
+
+    img {
+        width: 5rem;
     }
 }

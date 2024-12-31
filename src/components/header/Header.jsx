@@ -18,7 +18,7 @@ function Header() {
           Feliz Natal !!!
         </h1>
       </section>
-      <section className={S.sectionLogo}>
+      <section>
         < RouteFunction />
       </section>
     </header>
