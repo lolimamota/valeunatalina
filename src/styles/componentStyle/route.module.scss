@@ -1,0 +1,7 @@
+@use '@styles/patterns/mixins/mixins.scss' as mixins;
+
+.sectionUl{
+    @include mixins.flex($align: center, $justify: space-evenly, $gap:5vw);
+
+    padding: 1rem;
+}
