@@ -4,18 +4,7 @@
 
 
 .homeStyle{
-    height: 85vh;
-    background-image: url('@assets/capa.png');
-    background-position: center;
-    background-size: 101%;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    @include mixins.queryMobile{
-        height: 25vh;
-    }
-    @include mixins.queryTablet{
-        height: 45vh;
-    }
+    @include mixins.flex($align: center, $justify: center);
 }
 
 .curiosityStyle{
@@ -35,7 +24,7 @@
     }
 
     img{
-        width: 10vw;
+        width: 15vw;
     }
 
     @include mixins.queryMobile{
@@ -45,7 +34,7 @@
             text-align: center;
         }
         img{
-            width: 30vw;
+            width: 40vw;
         }
     }
 
@@ -55,11 +44,47 @@
             text-align: center;
         }
         img{
-            width: 20vw;
+            width: 25vw;
         }
     }
 }
 
 .galleryStyle{
-    border: solid green;
+    @include mixins.flex($align: center, $justify: center);
+    background-color: color.$galeria;
+
+    ul{
+        width: 100%;
+        @include mixins.flex($gap:2rem, $justify: space-evenly, $direction: row);
+        overflow: hidden;
+    }
+
+    img{
+        width: 20vw;
+    }
+    // //import do swipper
+
+    // .swiper {
+    //     width: 100%;
+    //     height: 100%;
+    //   }
+      
+    //   .swiper-slide {
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //   }
+      
+    //   .swiper-slide img {
+    //     display: block;
+    //     width: 100%;
+    //   }
+
+    @include mixins.queryMobile{
+        ul{
+            @include mixins.flex($gap:1rem, $justify: space-between, $direction: column);
+        }
+        img{
+            width: 40vw;
+        }
+    }
 }
