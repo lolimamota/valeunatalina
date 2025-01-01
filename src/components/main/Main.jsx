@@ -58,13 +58,13 @@ function Main() {
             <section id="Gallery" className={S.galleryStyle}>
                     <ul>
                         <li>
-                            <img src={fotoA} alt="" />
+                            <img src={fotoA} alt="A foto mostra no fundo casas historicas com fachadas coloridas e arvores com luzes amarelas no tronco no primeiro plano" />
                         </li>
                         <li>
-                            <img src={fotoB} alt="" />
+                            <img src={fotoB} alt="Imagem mostra a atração de Gramado luz, com casarões históricos e arcos de luzes, juntamente de pinheiros tradicionais do natal enfeitados com luzes" />
                         </li>
                         <li>
-                            <img src={fotoC} alt="" />
+                            <img src={fotoC} alt="A imagem apresenta um rio ladeado por arvores iluminadas com luzes amarelas e luzes refletoras voltadas para agua na cor azul, com um monumento iluminado ao centro" />
                         </li>
                     </ul>
             </section>
