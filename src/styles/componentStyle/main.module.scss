@@ -52,6 +52,7 @@
 .galleryStyle{
     @include mixins.flex($align: center, $justify: center);
     background-color: color.$galeria;
+    padding: 4rem;
 
     ul{
         width: 100%;
