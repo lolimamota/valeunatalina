@@ -6,30 +6,23 @@ import '@styles/global.scss';
 import S from '@styles/componentStyle/route.module.scss';
 
 function routeFunction() {
-  const toSection = (sectionId) =>{
-    const element = document.getElementById(
-      sectionId
-    );
-    if (element){
-        ElementInternals.toSectionView(
-          {
-            behavior: 'smooth'
-          }
-        );
-    }
-  }
-
   return (
     <section className={S.sectionNav}>
       <ul className={S.sectionUl}>
-        <li className={S.cursorPointer} onClick={() => toSection('Home')}>
-          Início
+        <li className={S.cursorPointer}>
+          <a href="#Home" className={S.cursorHover}>
+            Início
+          </a>
         </li>
-        <li className={S.cursorPointer} onClick={() => toSection('Curiosity')}>
-          Curiosidades
+        <li className={S.cursorPointer}>
+          <a href="#Curiosity" className={S.cursorHover}>
+            Curiosidade
+          </a>
         </li>
-        <li className={S.cursorPointer} onClick={() => toSection('Gallery')}>
-          Galeria
+        <li className={S.cursorPointer}>
+          <a href="#Gallery" className={S.cursorHover}>
+            Galeria
+          </a>
         </li>
       </ul>
     </section>
