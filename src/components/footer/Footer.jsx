@@ -20,8 +20,8 @@ function Footer() {
     </figure>
     <div className={S.creditosFinais}>
       <h3>Desenvolvido por Lorrayne Lima Mota</h3>
-      <h3>Vinicius Bispo</h3>
-      <h3>Marina Gomes</h3>
+      <h3>Instrutor: Vinicius Bispo</h3>
+      <h3>Facilitadora: Marina Gomes</h3>
       <h3>Layout criado para fins natalísticos na escola Vai Na Web</h3>
     </div>
     <figure className={S.fig02}>

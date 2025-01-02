@@ -24,6 +24,8 @@
 
 .creditosFinais{
     font-size: variables.$fontH3;
+    font-family: variables.$inriaSans;
+    font-weight: 100;
 
     @include mixins.flex($align: center, $justify: center, $direction: column);
 }
