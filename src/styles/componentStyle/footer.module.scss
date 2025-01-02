@@ -1,0 +1,29 @@
+@use '@styles/patterns/mixins/mixins.scss' as mixins;
+@use '@styles/patterns/colors.scss' as color;
+@use '@styles/patterns/variables.scss' as variables;
+
+.footerStyle{
+    background-color: color.$rectangle-color;
+    color: color.$text-color;
+    background-image: url('@assets/flocos.png');
+
+    @include mixins.flex($align: center, $justify: space-evenly);
+}
+
+.fig01{
+    img{
+        width: 5vw;
+    }
+}
+
+.fig02{
+    img{
+        width: 5vw;
+    }
+}
+
+.creditosFinais{
+    font-size: variables.$fontH3;
+
+    @include mixins.flex($align: center, $justify: center, $direction: column);
+}
